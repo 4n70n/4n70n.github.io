@@ -1,79 +1,94 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>时代的变迁：游戏引擎发展史(2018.02.27) | 4n70n的随手记</title>
+<meta name="description" content="Nothing Else">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="shortcut icon" href="4n70n.github.io/favicon.ico">
 <link rel="stylesheet" href="4n70n.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="4n70n.github.io">
-  <img class="avatar" src="4n70n.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    4n70n的随手记
-  </h1>
-  <p class="site-description">
-    Nothing Else
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="/post/articles/" class="menu">
-          文章存档
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="4n70n.github.io">
+        <img class="avatar" src="4n70n.github.io/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="4n70n.github.io">
+        <h1 class="site-title">4n70n的随手记</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+        
+          <a href="/post/articles/" class="menu purple-link">
+            文章存档
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              时代的变迁：游戏引擎发展史(2018.02.27)
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2018-02-27 ·
-              </time>
-              
-            </div>
-            <div class="post-content">
-              <p>本文为第一次尝试撰稿内容
+          <h2 class="post-title">时代的变迁：游戏引擎发展史(2018.02.27)</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2018-02-27</span>
+            
+          </div>
+          <div class="post-content">
+            <p>本文为第一次尝试撰稿内容
 写于2018年2月27日</p>
 <p>自1947年第一款电子游戏“阴极射线管娱乐装置”被创造以来，电子游戏已经有70多年的历史了，从平面到立体，这其中缺少不了各位行业先驱为了更好的画面质量以及更好的游戏性而作出的努力。到了今天，每一款优秀游戏的背后，都离不开一款优秀的引擎。
 一款游戏引擎理应包括以下部分：渲染引擎(渲染二维图像和三维图像)、物理引擎、音效、脚本引擎、动画、AI、网络引擎及场景管理模块。
@@ -105,23 +120,36 @@
 <p><a href="https://www.bilibili.com/video/av38129462">你了解“游戏引擎”么？【就知道玩游戏43】</a>
 <a href="https://www.bilibili.com/video/av45297455">你了解游戏引擎么(二)：引擎进化的脚步【就知道玩游戏51】</a></p>
 
-            </div>
-          </article>
+          </div>
         </div>
-    
-        
 
         
-    
-        <div class="site-footer">
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">Nothing Else</div>
   <script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script><span id="lwlhitokoto"><script>lwlhitokoto()</script></span>
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>

@@ -1,140 +1,176 @@
+
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>4n70n的随手记</title>
+<meta name="description" content="Nothing Else">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="shortcut icon" href="4n70n.github.io/favicon.ico">
 <link rel="stylesheet" href="4n70n.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="4n70n.github.io">
-  <img class="avatar" src="4n70n.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    4n70n的随手记
-  </h1>
-  <p class="site-description">
-    Nothing Else
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="/post/articles/" class="menu">
-          文章存档
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="4n70n.github.io">
+        <img class="avatar" src="4n70n.github.io/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="4n70n.github.io">
+        <h1 class="site-title">4n70n的随手记</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+        
+          <a href="/post/articles/" class="menu purple-link">
+            文章存档
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        
+        
+<section class="post-item">
+    <div class="content">
       <a href="4n70n.github.io/post/console-crack">
         <h2 class="post-title">一场旷日持久的博弈：破解之争(2018.08.07)</h2>
       </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2018-08-07 ·
-        </time>
-        
-      </div>
-      
-        <a href="4n70n.github.io/post/console-crack" class="post-feature-image" style="background-image: url('4n70n.github.io/post-images/console-crack.jpg')">
-        </a>
-      
       <div class="post-abstract">
         
-      </di>
-    </article>
-  
-    <article class="post">
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2018-08-07</span>
+        
+      </div>
+    </div>
+    
+      <a href="4n70n.github.io/post/console-crack">
+        <div class="feature-container" style="background-image: url('4n70n.github.io/post-images/console-crack.jpg')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
       <a href="4n70n.github.io/post/Konami">
         <h2 class="post-title">一步步走向深渊的Konami(2018.07.22)</h2>
       </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2018-07-22 ·
-        </time>
-        
-      </div>
-      
-        <a href="4n70n.github.io/post/Konami" class="post-feature-image" style="background-image: url('4n70n.github.io/post-images/Konami.jpg')">
-        </a>
-      
       <div class="post-abstract">
         
-      </di>
-    </article>
-  
-    <article class="post">
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2018-07-22</span>
+        
+      </div>
+    </div>
+    
+      <a href="4n70n.github.io/post/Konami">
+        <div class="feature-container" style="background-image: url('4n70n.github.io/post-images/Konami.jpg')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
       <a href="4n70n.github.io/post/game-engine-history">
         <h2 class="post-title">时代的变迁：游戏引擎发展史(2018.02.27)</h2>
       </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2018-02-27 ·
-        </time>
-        
-      </div>
-      
       <div class="post-abstract">
         
-      </di>
-    </article>
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2018-02-27</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+
+<div class="pagination-container">
+  
   
 </div>
 
-    
-        <div class="pagination-container">
-  
-  
-</div>
 
-    
-        <div class="site-footer">
+      </div>
+
+      <div class="site-footer">
+  <div class="slogan">Nothing Else</div>
   <script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script><span id="lwlhitokoto"><script>lwlhitokoto()</script></span>
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>

@@ -1,79 +1,94 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>一步步走向深渊的Konami(2018.07.22) | 4n70n的随手记</title>
+<meta name="description" content="Nothing Else">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="shortcut icon" href="4n70n.github.io/favicon.ico">
 <link rel="stylesheet" href="4n70n.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="4n70n.github.io">
-  <img class="avatar" src="4n70n.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    4n70n的随手记
-  </h1>
-  <p class="site-description">
-    Nothing Else
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="/post/articles/" class="menu">
-          文章存档
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="4n70n.github.io">
+        <img class="avatar" src="4n70n.github.io/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="4n70n.github.io">
+        <h1 class="site-title">4n70n的随手记</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+        
+          <a href="/post/articles/" class="menu purple-link">
+            文章存档
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              一步步走向深渊的Konami(2018.07.22)
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2018-07-22 ·
-              </time>
-              
-            </div>
-            <div class="post-content">
-              <p>《P.T.》(Playable Teaser)作为日本知名游戏制作人小岛秀夫离开老东家Konami之前的最后一部作品，虽然只是作为”《寂静岭》系列”新作的互动式宣传作品，但还是凭借着出色的恐怖氛围以及极高的压迫感在上架PlayStation商店的一个月内就收获了超过一百万次下载的成绩。
+          <h2 class="post-title">一步步走向深渊的Konami(2018.07.22)</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2018-07-22</span>
+            
+          </div>
+          <div class="post-content">
+            <p>《P.T.》(Playable Teaser)作为日本知名游戏制作人小岛秀夫离开老东家Konami之前的最后一部作品，虽然只是作为”《寂静岭》系列”新作的互动式宣传作品，但还是凭借着出色的恐怖氛围以及极高的压迫感在上架PlayStation商店的一个月内就收获了超过一百万次下载的成绩。
 <img src="https://i.loli.net/2019/03/21/5c93aea7acff3.jpg" alt="">
 当然，过后不久发生了什么事情相信各位读者也都清楚——小岛秀夫出走Konami并成立小岛工作室(Kojima Productions)，Konami内部也将”Silent Hills”这个项目砍掉，并对《P.T.》进行了下架处理。由于这款游戏在玩家以及媒体之中有着极高的口碑，如今在亚马逊上购买一台含有《P.T.》的PS4主机都被炒到了650美元甚至更高的价格。
 <img src="https://i.loli.net/2019/03/21/5c93aea76f614.png" alt="">
@@ -129,32 +144,44 @@ Konami的行动着实让人摸不着头脑，作为制作人的小岛秀夫却�
 在商言商，在我们玩家心里，Konami是个游戏公司。可是在日本本土，Konami是个综合性集团，旗下除开上文所提到的电子娱乐事业部门以外，还有开健身房和售卖保健品的健康部门，开发街机设备，例如柏青哥(也就是老虎机)这类产品的娱乐事业部，以及开发商用游乐器的游戏设备事业部。
 虽然这种场面不是我们玩家希望看到的，但是站在一个企业运营者的角度来说，以最少的成本，给公司创造最大的利润，这点也是无可厚非的。现在Konami走在了他们认为正确的道路上，那就暂且认为他们是对的吧。</p>
 
-            </div>
-          </article>
+          </div>
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="4n70n.github.io/post/game-engine-history">
-              <h3 class="post-title">
-                时代的变迁：游戏引擎发展史(2018.02.27)
-              </h3>
-            </a>
-          </div>  
-        
 
         
-    
-        <div class="site-footer">
+          <div class="next-post">
+            <a class="purple-link" href="4n70n.github.io/post/game-engine-history">
+              <h3 class="post-title">
+                下一篇：时代的变迁：游戏引擎发展史(2018.02.27)
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">Nothing Else</div>
   <script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script><span id="lwlhitokoto"><script>lwlhitokoto()</script></span>
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>

@@ -1,79 +1,94 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>一场旷日持久的博弈：破解之争(2018.08.07) | 4n70n的随手记</title>
+<meta name="description" content="Nothing Else">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="shortcut icon" href="4n70n.github.io/favicon.ico">
 <link rel="stylesheet" href="4n70n.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="4n70n.github.io">
-  <img class="avatar" src="4n70n.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    4n70n的随手记
-  </h1>
-  <p class="site-description">
-    Nothing Else
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="/post/articles/" class="menu">
-          文章存档
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="4n70n.github.io">
+        <img class="avatar" src="4n70n.github.io/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="4n70n.github.io">
+        <h1 class="site-title">4n70n的随手记</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+        
+          <a href="/post/articles/" class="menu purple-link">
+            文章存档
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              一场旷日持久的博弈：破解之争(2018.08.07)
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2018-08-07 ·
-              </time>
-              
-            </div>
-            <div class="post-content">
-              <p>7月26日，淘宝官方发表了一份《淘宝电玩破解类商品整顿公告》，公告内明确指出整顿对象为所有涉及绕过正常服务并提供免费安装和使用游戏的破解、自制工具或系统的商品，范围包括商品链接、商品SKU、商品标题、商品详情页及淘宝其他信息交流渠道。
+          <h2 class="post-title">一场旷日持久的博弈：破解之争(2018.08.07)</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2018-08-07</span>
+            
+          </div>
+          <div class="post-content">
+            <p>7月26日，淘宝官方发表了一份《淘宝电玩破解类商品整顿公告》，公告内明确指出整顿对象为所有涉及绕过正常服务并提供免费安装和使用游戏的破解、自制工具或系统的商品，范围包括商品链接、商品SKU、商品标题、商品详情页及淘宝其他信息交流渠道。
 同时，公告内也附上了几张违规示例的图片。
 <img src="https://i.loli.net/2019/03/21/5c93b0fdcb87a.png" alt="图1 违规示例截图.png">
 其实，游戏机破解在国内外都有着相当长的发展史，几乎可以说是自游戏机诞生之日起，破解，就伴随在其左右。最开始的时候，针对主机的破解不是从主机本体下手的，更多的是针对早期主机的存储设备的。
@@ -134,32 +149,44 @@
 不过从淘宝发布整顿公告这件事情来理解，可以明显看出国内市场对于知识版权的重视正在缓缓提升，这也证明了国内玩家们也在逐渐培养正版意识，这是一件好事。
 从长远来看，游戏主机的破解对于开发商、游戏厂商甚至是玩家都是百害而无一利的。倘若是真心喜欢一个平台，在自己能力范围内尽量的去支持正版，维护平台的生态，创造一个美好的游戏环境又有何不可呢？</p>
 
-            </div>
-          </article>
+          </div>
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="4n70n.github.io/post/Konami">
-              <h3 class="post-title">
-                一步步走向深渊的Konami(2018.07.22)
-              </h3>
-            </a>
-          </div>  
-        
 
         
-    
-        <div class="site-footer">
+          <div class="next-post">
+            <a class="purple-link" href="4n70n.github.io/post/Konami">
+              <h3 class="post-title">
+                下一篇：一步步走向深渊的Konami(2018.07.22)
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">Nothing Else</div>
   <script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script><span id="lwlhitokoto"><script>lwlhitokoto()</script></span>
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>
