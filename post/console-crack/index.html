@@ -7,94 +7,86 @@
 <meta name="description" content="Nothing Else">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://4n70n.netlify.com//favicon.ico?v=1557820025981">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://4n70n.netlify.com//favicon.ico">
 <link rel="stylesheet" href="https://4n70n.netlify.com//styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://4n70n.netlify.com/">4n70n的随手记</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://4n70n.netlify.com/">
+        <img src="https://4n70n.netlify.com//images/avatar.png" class="site-logo">
+        <h1 class="site-title">4n70n的随手记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="/" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
         
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/post/articles/" class="menu">
-                文章存档
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-      </ul>
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="/post/articles/" class="site-nav">
+            文章存档
+          </a>
+        
+      
     </div>
   </div>
-</nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      Nothing Else
+    </div>
+    <div class="site-footer">
+      <script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script><span id="lwlhitokoto"><script>lwlhitokoto()</script></span>
+    </div>
+  </div>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>一场旷日持久的博弈：破解之争(2018.08.07)</h1>
-            <p class="article-meta">
-              2018-08-07
-              
-            </p>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">一场旷日持久的博弈：破解之争(2018.08.07)</h2>
+            <div class="post-date">2018-08-07</div>
             
-              <img src="https://4n70n.netlify.com//post-images/console-crack.jpg" alt="一场旷日持久的博弈：破解之争(2018.08.07)">
+              <div class="feature-container" style="background-image: url('https://4n70n.netlify.com//post-images/console-crack.jpg')">
+              </div>
             
             <div class="post-content">
               <p>7月26日，淘宝官方发表了一份《淘宝电玩破解类商品整顿公告》，公告内明确指出整顿对象为所有涉及绕过正常服务并提供免费安装和使用游戏的破解、自制工具或系统的商品，范围包括商品链接、商品SKU、商品标题、商品详情页及淘宝其他信息交流渠道。
@@ -159,91 +151,24 @@
 从长远来看，游戏主机的破解对于开发商、游戏厂商甚至是玩家都是百害而无一利的。倘若是真心喜欢一个平台，在自己能力范围内尽量的去支持正版，维护平台的生态，创造一个美好的游戏环境又有何不可呢？</p>
 
             </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://4n70n.netlify.com//post/Konami">
+                  <h3 class="post-title">
+                    一步步走向深渊的Konami(2018.07.22)
+                  </h3>
+                </a>
               </div>
-              <a href="https://4n70n.netlify.com//post/Konami">
-                <h3 class="post-title">
-                  一步步走向深渊的Konami(2018.07.22)
-                </h3>
-              </a>
-            </div>
-          
+            
+
+            
+
+          </div>
+
         </div>
-        
       </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://4n70n.netlify.com//images/avatar.png?v=1557820025981" class="no-responsive avatar">
-    <div class="text-muted">Nothing Else</div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://4n70n.netlify.com//post/articles">文章归档</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://4n70n.netlify.com//post/console-crack">一场旷日持久的博弈：破解之争(2018.08.07)</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://4n70n.netlify.com//post/Konami">一步步走向深渊的Konami(2018.07.22)</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://4n70n.netlify.com//post/game-engine-history">时代的变迁：游戏引擎发展史(2018.02.27)</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-    </div>
-  </div>
-  <div class="paper">
-    <script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script><span id="lwlhitokoto"><script>lwlhitokoto()</script></span>
-  </div>
-</div>
-
-
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -253,6 +178,13 @@
 AOS.init();
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
