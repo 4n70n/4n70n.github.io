@@ -1,110 +1,102 @@
-
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-
-<title>
-    时代的变迁：游戏引擎发展史(2018.02.27) | 4n70n &#39;s Blog
-</title>
-<meta name="description" content="">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="shortcut icon" href="https://4n70n.com//favicon.ico">
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>时代的变迁：游戏引擎发展史(2018.02.27) | 4n70n &#39;s Blog</title>
+<link rel="shortcut icon" href="https://4n70n.com//favicon.ico?v=1558923915076">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://4n70n.com//styles/main.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-                        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-                        <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-                        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71788417-1"></script>
-                        <script>
-                            window.dataLayer = window.dataLayer || [];
 
-                            function gtag() {
-                                dataLayer.push(arguments);
-                            }
-                            gtag('js', new Date());
-
-                            gtag('config', 'UA-71788417-1');
-                        </script>
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://4n70n.com/">
-        <img class="avatar" src="https://4n70n.com//images/avatar.png" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://4n70n.com/">
-        <h1 class="site-title">4n70n &#39;s Blog</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://4n70n.com/">
+  <img class="avatar" src="https://4n70n.com//images/avatar.png?v=1558923915076" alt="">
+  </a>
+  <h1 class="site-title">
+    4n70n &#39;s Blog
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/post/contact/" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="/post/articles/" class="menu">
+          文章存档
+        </a>
+      
+    
+      
+        <a href="/post/friends/" class="menu">
+          友情链接
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
   </div>
 </div>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/post/contact/" class="menu purple-link">
-            关于
-          </a>
-        
-      
-        
-          <a href="/post/articles/" class="menu purple-link">
-            文章存档
-          </a>
-        
-      
-        
-          <a href="/post/friends/" class="menu purple-link">
-            友情链接
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
 
-
-      <div class="content-container">
         <div class="post-detail">
-          <h2 class="post-title">时代的变迁：游戏引擎发展史(2018.02.27)</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2018-02-27</span>
+          <article class="post">
+            <h2 class="post-title">
+              时代的变迁：游戏引擎发展史(2018.02.27)
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2018-02-27 ·
+              </time>
+              
+            </div>
             
-          </div>
-          <div class="post-content">
-            <p>本文为第一次尝试撰稿内容
+            <div class="post-content">
+              <p>本文为第一次尝试撰稿内容
 写于2018年2月27日</p>
 <p>自1947年第一款电子游戏“阴极射线管娱乐装置”被创造以来，电子游戏已经有70多年的历史了，从平面到立体，这其中缺少不了各位行业先驱为了更好的画面质量以及更好的游戏性而作出的努力。到了今天，每一款优秀游戏的背后，都离不开一款优秀的引擎。
 一款游戏引擎理应包括以下部分：渲染引擎(渲染二维图像和三维图像)、物理引擎、音效、脚本引擎、动画、AI、网络引擎及场景管理模块。
@@ -136,37 +128,24 @@
 <p><a href="https://www.bilibili.com/video/av38129462">你了解“游戏引擎”么？【就知道玩游戏43】</a>
 <a href="https://www.bilibili.com/video/av45297455">你了解游戏引擎么(二)：引擎进化的脚步【就知道玩游戏51】</a></p>
 
-          </div>
+            </div>
+          </article>
         </div>
 
         
-      </div>
 
-      
-
-      <div class="site-footer">
-    <div class="slogan">
         
-    </div>
-    <p>Made with <i class="fa fa-heart throb" style="color:#d43f57"></i> by 4n70n.
+
+        <div class="site-footer">
+  <p>Made with <i class="fa fa-heart throb" style="color:#d43f57"></i> by 4n70n | 
+  <a class="rss" href="https://4n70n.com//atom.xml" target="_blank">RSS</a>
 </div>
 
-    </div>
-    <script type="application/javascript">
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
-
-
-
+      </div>
+    </div>
   </body>
 </html>
