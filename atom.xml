@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://4n70n.com/</id>
     <title>4n70n &apos;s Blog</title>
-    <updated>2019-05-27T02:25:16.741Z</updated>
+    <updated>2019-05-27T02:26:10.802Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://4n70n.com/"/>
     <link rel="self" href="https://4n70n.com//atom.xml"/>
@@ -10,7 +10,7 @@
     <icon>https://4n70n.com//favicon.ico</icon>
     <rights>All rights reserved 2019, 4n70n &apos;s Blog</rights>
     <entry>
-        <title type="html"><![CDATA[一场旷日持久的博弈：破解之争(2018.08.07)]]></title>
+        <title type="html"><![CDATA[一场旷日持久的博弈：破解之争]]></title>
         <id>https://4n70n.com//post/console-crack</id>
         <link href="https://4n70n.com//post/console-crack">
         </link>
@@ -78,7 +78,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[一步步走向深渊的Konami(2018.07.22)]]></title>
+        <title type="html"><![CDATA[一步步走向深渊的Konami]]></title>
         <id>https://4n70n.com//post/Konami</id>
         <link href="https://4n70n.com//post/Konami">
         </link>
@@ -141,7 +141,7 @@ Konami的行动着实让人摸不着头脑，作为制作人的小岛秀夫却�
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[时代的变迁：游戏引擎发展史(2018.02.27)]]></title>
+        <title type="html"><![CDATA[时代的变迁：游戏引擎发展史]]></title>
         <id>https://4n70n.com//post/game-engine-history</id>
         <link href="https://4n70n.com//post/game-engine-history">
         </link>
